@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+</head>
+<body>
+<h1>Add Student</h1>
+<form action="/addStudent" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="surname">Surname:</label><br>
+    <input type="text" id="surname" name="surname" required><br>
+    <label for="exam">Exam result:</label><br>
+    <input type="number" id="exam" name="exam" required><br>
+    <button type="submit">Add Student</button>
+</form>
+</body>
+</html>
