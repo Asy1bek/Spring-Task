@@ -5,7 +5,7 @@ import kz.bitlab.academy.springfirstsprint.entity.StudentEntity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class  StudentService {
+public class StudentService {
 
     private static List<StudentEntity> students = new ArrayList<>();
     private static Long id = 1L;
@@ -22,5 +22,7 @@ public class  StudentService {
         return students;
     }
 
-
+    public static void save(StudentEntity student) {
+        students.add(student);
+    }
 }
